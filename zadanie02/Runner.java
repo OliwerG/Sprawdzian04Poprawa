@@ -5,17 +5,17 @@ import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
         System.out.print("Podaj imię: ");
         Optional<String> name = Optional.ofNullable(scanner.nextLine());
         name.ifPresentOrElse(x -> {
             System.out.println("Długość:  " + name.get().length());
         }, () -> System.out.println(0));
         System.out.print("\n Podaj pesel: ");
-        String pesel = scanner.nextLine();
-        checkPesel(pesel);
+        Optional<String> pesel = Optional.ofNullable(scanner.nextLine());
+        checkPesel(String.valueOf(pesel));
 
-        scanner.close();
+        scanner.close();   
     }
 
     public static void checkPesel(String pesel) throws InvalidPeselException {
