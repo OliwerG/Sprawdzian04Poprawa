@@ -13,7 +13,7 @@ import java.util.Locale;
 
 public class CalculatorAge {
 
-    public void calculatorAge(Date myBirthDate) throws ParseException {
+    public void calculatorAge(Date myBirthDate) {
         Calendar myBirthDay = Calendar.getInstance();
         myBirthDay.setTimeInMillis(myBirthDate.getTime());
 
