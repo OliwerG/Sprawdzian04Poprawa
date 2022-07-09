@@ -1,15 +1,9 @@
 package zadanie05;
 
-import java.text.ParseException;
 import java.time.*;
-import java.time.format.DateTimeFormatter;
-import java.time.format.TextStyle;
-import java.time.temporal.Temporal;
-import java.time.temporal.WeekFields;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.Locale;
 
 public class CalculatorAge {
 
